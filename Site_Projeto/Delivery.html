@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title> Atlas Gastrônomico  </title> 
+   <link rel="stylesheet" href="style.css">
+
+ <script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    // Adiciona ou remove o estado ativo da cortina branca
+    mobileMenu.classList.toggle('is-active');
+  }
+</script>
+</head>
+<body>
+
+  <!-- Cabeçalho Principal -->
+
+  <header class="header-container">
+    <div class="logo-title-area">
+        <img src="Logo2.png" alt="Logo Atlas Gastronômico" class="logo-img">
+        <h1 class="logo">Atlas Gastronômico</h1>
+    </div>
+    <!-- Menu deitado para computadores (escondido no mobile) -->
+    <nav class="desktop-menu">
+      <a href="Home.html">Home</a>
+      <a href="Sobre.html">Sobre</a>
+      <a href="Cardápio.html">Cardápio</a>
+      <a href="Contato.html">Contato</a>
+      <a href="Reserva.html">Reserva</a>
+      <a href="Delivery.html">Delivery</a>
+    </nav>
+
+    <!-- Botão para telas móveis (Imagem 1) -->
+    <button class="menu-toggle-btn open-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- Janela de Menu Mobile Sobreposto (Imagem 2) -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">Atlas Gastronômico</span>
+    <button class="menu-toggle-btn close-btn" onclick="toggleMobileMenu()">✕</button>
+    </div>
+    <nav class="mobile-menu-links">
+      <a href="Home.html" onclick="toggleMobileMenu()">Home</a>
+      <a href="Sobre.html" onclick="toggleMobileMenu()">Sobre</a>
+      <a href="Cardápio.html" onclick="toggleMobileMenu()">Cardápio</a>
+      <a href="Contato.html" onclick="toggleMobileMenu()">Contato</a>
+      <a href="Reserva.html" onclick="toggleMobileMenu()">Reserva</a>
+      <a href="Delivery.html" onclick="toggleMobileMenu()">Delivery</a>
+    </nav>
+  </div>
+</header>
+
+<section class="delivery-form"> 
+
+  <!-- CONTEÚDO -->
+  <main class="container">
+
+    <div class="icon-circle"><img src="sacola-organica.png" alt="sacola" width="60%"></div>
+
+    <h1>Pedido para Entrega</h1>
+
+    <p class="subtitle">
+      Desfrute da culinária de classe mundial do Atlas Gastronômico no conforto da sua casa.
+    </p>
+
+    <!-- FORMULÁRIO -->
+    <form class="delivery-form">
+
+      <div class="form-group">
+        <label>Nome Completo *</label>
+        <input type="text" placeholder="Digite seu nome completo">
+      </div>
+
+      <div class="form-group">
+        <label>Telefone *</label>
+        <input type="text" placeholder="(00) 000-0000">
+      </div>
+
+      <div class="form-group">
+        <label>Endereço de Entrega  *</label>
+        <textarea placeholder="Rua, número do apartamento/suíte, cidade, estado, CEP"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Informações Adicionais</label>
+        <textarea placeholder="Instruções de entrega, ponto de referência, código do portão, etc."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Forma de Pagamento*</label>
+
+        <select>
+          <option>Cartão de Crédito</option>
+          <option>Cartão de Débito</option>
+          <option>Pix</option>
+          <option>Dinheiro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Observações do Pedido</label>
+        <textarea placeholder="Restrições alimentares, alergias, pedidos extras, etc."></textarea>
+      </div>
+
+      <button type="submit" class="btn-order">
+        <i class="fa-solid fa-bag-shopping"></i>
+        Fazer Pedido
+      </button>
+
+      <p class="terms">
+        Ao fazer um pedido, você concorda com nossos termos e condições
+      </p>
+
+    </form>
+
+    <!-- CARDS -->
+    <div class="features">
+
+      <div class="feature-card"> <img src="sacola.png" alt="Rápida" width="40%">
+        <h3>Entrega Rápida</h3>
+        <p>Tempo médio de entrega: 35–45 minutos</p>
+      </div>
+
+      <div class="feature-card"> <img src="forma-de-pagamento.png" alt="pagamento" width="40%">
+        <h3>Pagamento Seguro</h3>
+        <p>Suas informações de pagamento estão protegidas</p>
+      </div>
+
+      <div class="feature-card"> <img src="caixa.png" alt="expresso" width="40%">
+        <h3>Fresco e Quente</h3>
+        <p>Comida entregue fresca na sua porta</p>
+      </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Coluna 1 -->
+        <div class="footer-box">
+            <h2>Atlas Gastronômico</h2>
+            <p>
+                Onde a arte culinária encontra os sabores do mundo inteiro em uma atmosfera.
+            </p>
+
+            <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"><img src="facebook.png" alt="facebook" width="48%"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"><img src="instagram (1).png" alt="instagram" width="48%"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"><img src="icons8-twitter-48.png" alt="twiitter" width="48%"></i></a>
+        </div>
+      </div>
+
+        <!-- Coluna 2 -->
+        <div class="footer-box">
+            <h3>Informações de contato</h3>
+
+            <div class="info">
+                <span>📍</span>
+                <p>
+                    Alameda Santos, 1850 <br>
+                    Jardins, São Paulo – SP 
+                    01418-200 
+                </p>
+            </div>
+
+            <div class="info">
+                <span>📞</span>
+                <p>+55 (22) 123-4567</p>
+            </div>
+
+            <div class="info">
+                <span>✉</span>
+                <p>info@atlasgastronomico.com</p>
+            </div>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="footer-box">
+            <h3>Horário de funcionamento</h3>
+
+            <div class="hours">
+                <span>Segunda-Feira - Quinta-Feira</span>
+                <span>5:00 PM - 10:00 PM</span>
+            </div>
+
+            <div class="hours">
+                <span>Sexta-Feira - Sábado</span>
+                <span>5:00 PM - 11:00 PM</span>
+            </div>
+
+            <div class="hours">
+                <span>Domingo</span>
+                <span>4:00 PM - 9:00 PM</span>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p> © 2026 Atlas Gastronômico Restaurante. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+     
+

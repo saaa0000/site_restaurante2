@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title> Atlas Gastrônomico  </title> 
+   <link rel="stylesheet" href="style.css">
+ <script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    // Adiciona ou remove o estado ativo da cortina branca
+    mobileMenu.classList.toggle('is-active');
+  }
+</script>
+</head>
+<body>
+
+    
+    <header class="header-container">
+    <div class="logo-title-area">
+        <img src="Logo2.png" alt="Logo Atlas Gastronômico" class="logo-img">
+        <h1 class="logo">Atlas Gastronômico</h1>
+    </div>
+    
+        
+    </div>
+    <!-- Menu deitado para computadores (escondido no mobile) -->
+    <nav class="desktop-menu">
+      <a href="Home.html">Home</a>
+      <a href="Sobre.html">Sobre</a>
+      <a href="Cardápio.html">Cardápio</a>
+      <a href="Contato.html">Contato</a>
+      <a href="Reserva.html">Reserva</a>
+      <a href="Delivery.html">Delivery</a>
+    </nav>
+
+    <!-- Botão para telas móveis (Imagem 1) -->
+    <button class="menu-toggle-btn open-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- Janela de Menu Mobile Sobreposto (Imagem 2) -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">Atlas Gastronômico</span>
+    <button class="menu-toggle-btn close-btn" onclick="toggleMobileMenu()">✕</button>
+    </div>
+    <nav class="mobile-menu-links">
+      <a href="Home.html" onclick="toggleMobileMenu()">Home</a>
+      <a href="Sobre.html" onclick="toggleMobileMenu()">Sobre</a>
+      <a href="Cardápio.html" onclick="toggleMobileMenu()">Cardápio</a>
+      <a href="Contato.html" onclick="toggleMobileMenu()">Contato</a>
+      <a href="Reserva.html" onclick="toggleMobileMenu()">Reserva</a>
+      <a href="Delivery.html" onclick="toggleMobileMenu()">Delivery</a>
+    </nav>
+  </div>
+</header>
+       
+
+      <!-- CONTACT -->
+   <section class="contact-section">
+
+    <h1>Fale Conosco!</h1>
+
+    <p>
+      Tem alguma dúvida ou quer saber mais? Adoraríamos ouvir você.
+    </p>
+
+    <div class="contact-box">
+
+      <!-- NOME -->
+      <div class="input-group">
+        <label>Nome</label>
+
+        <div class="input-field">
+          <i class="fa-regular fa-user"></i>
+          <input type="text" placeholder="Digite seu nome completo">
+        </div>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="input-group">
+        <label>Email</label>
+
+        <div class="input-field">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="@example.com">
+        </div>
+      </div>
+
+      <!-- TELEFONE -->
+      <div class="input-group">
+        <label>Telefone</label>
+
+        <div class="input-field">
+          <i class="fa-solid fa-phone"></i>
+          <input type="text" placeholder="+55 (00) 000-0000">
+        </div>
+      </div>
+
+      <!-- MENSAGEM -->
+      <div class="input-group">
+        <label>Sua Mensagem</label>
+
+        <div class="textarea-field">
+          <i class="fa-regular fa-message"></i>
+          <textarea placeholder=""></textarea>
+        </div>
+      </div>
+
+      <!-- BOTÃO -->
+      <button type="submit"class="btn-order">
+        <i class="fa-regular fa-paper-plane"></i>
+        Enviar Mensagem
+      </button>
+
+    </div>
+  </section>
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Coluna 1 -->
+        <div class="footer-box">
+            <h2>Atlas Gastronômico</h2>
+            <p>
+                Onde a arte culinária encontra os sabores do mundo inteiro em uma atmosfera.
+            </p>
+
+            <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"><img src="facebook.png" alt="facebook" width="48%"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"><img src="instagram (1).png" alt="instagram" width="48%"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"><img src="icons8-twitter-48.png" alt="twiitter" width="48%"></i></a>
+        </div>
+      </div>
+
+        <!-- Coluna 2 -->
+        <div class="footer-box">
+            <h3>Informações de contato</h3>
+
+            <div class="info">
+                <span>📍</span>
+                <p>
+                    Alameda Santos, 1850 <br>
+                    Jardins, São Paulo – SP 
+                    01418-200 
+                </p>
+            </div>
+
+            <div class="info">
+                <span>📞</span>
+                <p>+55 (22) 123-4567</p>
+            </div>
+
+            <div class="info">
+                <span>✉</span>
+                <p>info@atlasgastronomico.com</p>
+            </div>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="footer-box">
+            <h3>Horário de funcionamento</h3>
+
+            <div class="hours">
+                <span>Segunda-Feira - Quinta-Feira</span>
+                <span>5:00 PM - 10:00 PM</span>
+            </div>
+
+            <div class="hours">
+                <span>Sexta-Feira - Sábado</span>
+                <span>5:00 PM - 11:00 PM</span>
+            </div>
+
+            <div class="hours">
+                <span>Domingo</span>
+                <span>4:00 PM - 9:00 PM</span>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p> © 2026 Atlas Gastronômico Restaurante. Todos os direitos reservados.</p>
+    </div>
+</footer>
+     
+
+
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title> Atlas Gastrônomico</title> 
+   <link rel="stylesheet" href="style.css">
+   <script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    // Adiciona ou remove o estado ativo da cortina branca
+    mobileMenu.classList.toggle('is-active');
+  }
+</script>
+</head>
+<body>
+
+    
+    <header class="header-container">
+    <div class="logo-title-area">
+        <img src="Logo2.png" alt="Logo Atlas Gastronômico" class="logo-img">
+        <h1 class="logo">Atlas Gastronômico</h1>
+    </div>
+    
+        
+    </div>
+    <!-- Menu deitado para computadores (escondido no mobile) -->
+    <nav class="desktop-menu">
+      <a href="Home.html">Home</a>
+      <a href="Sobre.html">Sobre</a>
+      <a href="Cardápio.html">Cardápio</a>
+      <a href="Contato.html">Contato</a>
+      <a href="Reserva.html">Reserva</a>
+      <a href="Delivery.html">Delivery</a>
+    </nav>
+
+    <!-- Botão para telas móveis (Imagem 1) -->
+    <button class="menu-toggle-btn open-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- Janela de Menu Mobile Sobreposto (Imagem 2) -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">Atlas Gastronômico</span>
+    <button class="menu-toggle-btn close-btn" onclick="toggleMobileMenu()">✕</button>
+    </div>
+    <nav class="mobile-menu-links">
+      <a href="Home.html" onclick="toggleMobileMenu()">Home</a>
+      <a href="Sobre.html" onclick="toggleMobileMenu()">Sobre</a>
+      <a href="Cardápio.html" onclick="toggleMobileMenu()">Cardápio</a>
+      <a href="Contato.html" onclick="toggleMobileMenu()">Contato</a>
+      <a href="Reserva.html" onclick="toggleMobileMenu()">Reserva</a>
+      <a href="Delivery.html" onclick="toggleMobileMenu()">Delivery</a>
+    </nav>
+  </div>
+</header>
+  <section class="hero2">
+    <div class="overlay2"></div>
+    <div class="conteudo">
+      <h2>World Menu</h2>
+      <p>
+       Embarque numa viagem culinária através de continentes. 
+      </p>
+      <p>
+       Cada prato elaborado com técnicas autênticas e os melhores ingredientes do seu país de origem.
+      </p>
+    </div>
+  </section>
+
+  <!-- MÉXICO -->
+
+  <div class="categoria">
+   <div><img src="mexico.png" alt="Mexico" width="5%"></div>
+    <h3><span>MX</span> México</h3>
+
+    <div class="cards-menu">
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/Cheesy Birria Tacos with Consomé 🌮🧀 - Anitha Cooks.jpg" alt="tacos" width="40%"></div>
+        <div class="topo-card">
+          <h4>Authentic Street Tacos</h4>
+          <span>R$40</span>
+        </div>
+
+        <p>
+          Tortilhas de milho macias com carne assada grelhada, cebola, coentro e limão.
+        </p>
+
+      </div>
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/green chile chicken enchiladas.jpg" alt="enchiladas" width="30%"></div>
+        <div class="topo-card">
+          <h4>Enchiladas Verdes</h4>
+          <span>R$50</span>
+        </div>
+
+        <p>
+          Enchiladas de frango com molho de tomatillo picante e queijo fresco.
+        </p>
+
+      </div>
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/Mexiko_ Ett Recept på Äkta Mexikansk Mole Poblano.jpg" alt="Mole Poblano" width="30%"></div>
+        <div class="topo-card">
+          <h4>Mole Poblano</h4>
+          <span>R$70</span>
+        </div>
+
+        <p>
+          Frango em um rico molho de chocolate e pimenta com sementes de gergelim.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ITÁLIA -->
+
+  <div class="categoria">
+   <div><img src="italia.png" alt="Itália" width="5%"></div>
+    <h3><span>IT</span> Itália</h3>
+
+    <div class="cards-menu">
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/Low-Cost Dinners With Big Flavor.jpg" alt="Lasagna" width="30%"></div>
+        <div class="topo-card">
+          <h4>Lasagna</h4>
+          <span>R$50</span>
+        </div>
+
+        <p>
+          Camadas de massa, molho de carne, queijo e molho bechamel.
+        </p>
+
+      </div>
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/Delicious Pasta Carbonara With Guanciale Recipe.jpg"alt="Carbonara" width="30%"></div>
+        <div class="topo-card">
+          <h4>Pasta Carbonara</h4>
+          <span>R$40</span>
+        </div>
+
+        <p>
+          Massa fresca com guanciale, queijo pecorino romano e ovos caipiras.
+        </p>
+
+      </div>
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/Italian Margarita Pizza🍕.jpg" alt="pizza" width="30%"></div>
+        <div class="topo-card">
+          <h4>Margherita Pizza</h4>
+          <span>R$30</span>
+        </div>
+
+        <p>
+          Pizza assada em forno a lenha com tomates San Marzano, mussarela de búfala e manjericão.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JAPÃO -->
+
+  <div class="categoria">
+   <div><img src="japao.png" alt="Japão" width="5%"></div>
+    <h3><span>JP</span> Japão</h3>
+
+    <div class="cards-menu">
+
+      <div class="card">
+      <div class="image-box"><img src="Pratos/Savor the Flavor_ Japanese Sushi Delights.jpg" alt="sushi" width="30%"></div>
+        <div class="topo-card">
+          <h4>Omakase Sushi</h4>
+          <span>R$168</span>
+        </div>
+
+        <p>
+         Seleção do chef de nigiri e maki sazonais.
+        </p>
+
+      </div>
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/🌟 Indulge in Luxury_ Heavenly Wagyu Steak Plate Delight! 🍴😋.jpg" alt="Wagyu" width="30%"></div>
+        <div class="topo-card">
+          <h4>Wagyu Beef Teppanyaki</h4>
+          <span>R$185</span>
+        </div>
+
+        <p>
+          Carne wagyu grelhada com legumes da estação.
+        </p>
+
+      </div>
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/download (18).jpg" alt="Ramen" width="30%"></div>
+        <div class="topo-card">
+          <h4>Ramen Tonkotsu</h4>
+          <span>R$60</span>
+        </div>
+
+        <p>
+          Caldo rico de osso de porco com macarrão fresco, chashu e ovo cozido.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FRANÇA -->
+
+  <div class="categoria">
+   <div><img src="franca.png" alt="França" width="5%"></div>
+    <h3><span>FR</span> França</h3>
+
+    <div class="cards-menu">
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/Rich and Cozy Coq au Vin.jpg" alt="coq de au vin" width="30%"></div>
+        <div class="topo-card">
+          <h4>Coq au Vin</h4>
+          <span>R$100</span>
+        </div>
+
+        <p>
+          Frango em vinho tinto com cebolas e cogumelos.
+        </p>
+
+      </div>
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/Steak au Poivre (Peppercorn Steak).jpg" alt="Steak au Poivre" width="30%"></div>
+        <div class="topo-card">
+          <h4>Steak au Poivre</h4>
+          <span>R$120</span>
+        </div>
+
+        <p>
+          Filé preparado com pimenta e servido com molho cremoso.
+        </p>
+
+      </div>
+
+      <div class="card">
+         <div class="image-box"><img src="Pratos/Ratatouille  _👨🏻_🍳@rocket22 🌹.jpg" alt="Ratatouille" width="30%"></div>
+        <div class="topo-card">
+          <h4>Ratatouille</h4>
+          <span>R$72</span>
+        </div>
+
+        <p>
+          Ensopado clássico provençal de legumes com berinjela, abobrinha e tomates.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ÍNDIA -->
+
+ <div class="categoria">
+   <div><img src="india.png" alt="Índia" width="5%"></div>
+  <h3><span>IN</span> Índia</h3>
+
+  <div class="cards-menu">
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/download (19).jpg" alt="Butter Chicken" width="30%"></div>
+      <div class="topo-card">
+        <h4>Butter Chicken</h4>
+        <span>R$74</span>
+      </div>
+
+      <p>
+        Frango tenro em molho cremoso de tomate com especiarias aromáticas.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Rogan Josh.jpg"alt="Lamb" width="30%"></div>
+      <div class="topo-card">
+        <h4>Lamb Rogan Josh</h4>
+        <span>R$100</span>
+      </div>
+
+      <p>
+        Caril de cordeiro da Caxemira com iogurte e especiarias aromáticas.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/download (20).jpg" alt="Paneer" width="30%"></div>
+      <div class="topo-card">
+        <h4>Paneer Tikka Masala</h4>
+        <span>R$68</span>
+      </div>
+
+      <p>
+        Queijo cottage grelhado em um rico molho cremoso de tomate.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- TAILÂNDIA -->
+
+   <div class="categoria">
+      <div><img src="tailandia.png" alt="Tailândia" width="5%"></div>
+      <h3><span>TH</span> Tailândia</h3>
+
+  <div class="cards-menu">
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Shrimp Pad Thai Recipe - TremBom.jpg" alt="Pad Thai" width="30%"></div>
+      <div class="topo-card">
+        <h4>Pad Thai</h4>
+        <span>R$80</span>
+      </div>
+
+      <p>
+        Macarrão de arroz frito com camarão, amendoim e tamarindo.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Chicken Massaman Curry with Potatoes and Carrots _ Easy Thai Recipe.jpg" alt="Massaman" width="30%"></div>
+      <div class="topo-card">
+        <h4>Massaman Curry</h4>
+        <span>R$94</span>
+      </div>
+
+      <p>
+        Curry de coco encorpado com carne, batatas e amendoim torrado.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/lasagna soup crockpot.jpg" alt="Tom Yum" width="30%"></div>
+      <div class="topo-card">
+        <h4>Tom Yum Goong</h4>
+        <span>R$70</span>
+      </div>
+
+      <p>
+        Sopa picante e azeda com camarões, capim-limão e galanga.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ESPANHA -->
+
+<div class="categoria">
+   <div><img src="espanha.png" alt="Espanha" width="5%"></div>
+  <h3><span>ES</span> Espanha</h3>
+  <div class="cards-menu"> 
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Classic Paella Valenciana with Bomba Rice and Paprika - The Hungry Goddess.jpg" alt="Paella" width="30%"></div>
+      <div class="topo-card">
+        <h4>Paella Valenciana</h4>
+        <span>R$120</span>
+      </div>
+
+      <p>
+        Arroz com açafrão, frango, coelho e legumes da estação.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Spanish Garlic Shrimp (Prawns) – Gambas al Ajillo.jpg" alt="Gambas" width="30%"></div>
+      <div class="topo-card">
+        <h4>Gambas al Ajillo</h4>
+        <span>R$50</span>
+      </div>
+
+      <p>
+        Camarões salteados ao alho, azeite e pimenta.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Jamón ibérico de bellota sobre torrija de tomate, un plato de fiesta   - Cocina y Aficiones.jpg" alt="jamon" width="30%"></div>
+      <div class="topo-card">
+        <h4>Jamón Ibérico</h4>
+        <span>R$45</span>
+      </div>
+
+      <p>
+        Presunto ibérico, fatiado à mão, com pão de tomate.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- GRÉCIA -->
+
+<div class="categoria">
+   <div><img src="grecia.png" alt="Grécia" width="5%"></div>
+  <h3><span>GR</span> Grécia</h3>
+
+  <div class="cards-menu">
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Moussaka famous dish Stock Photo _ Adobe Stock.jpg" alt="Moussaka" width="30%"></div>
+      <div class="topo-card">
+        <h4>Moussaka</h4>
+        <span>R$75</span>
+      </div>
+
+      <p>
+        Camadas de berinjela e cordeiro com molho bechamel.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/🐙Chargrilled Octopus with Smoked Paprika Oil & Potato Mousseline 🐙.jpg" alt="polvo" width="30%"></div>
+      <div class="topo-card">
+        <h4>Polvo Grelhado</h4>
+        <span>R$150</span>
+      </div>
+
+      <p>
+        Polvo grelhado com limão, azeite e orégano.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Cooking Challenges.jpg" alt="Spanakopita" width="30%"></div>
+      <div class="topo-card">
+        <h4>Spanakopita</h4>
+        <span>R$70</span>
+      </div>
+
+      <p>
+        Massa folhada crocante recheada com espinafre e queijo feta.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- BRASIL -->
+
+<div class="categoria">
+   <div><img src="brasil.png" alt="Brasil" width="5%"></div>
+  <h3><span>BR</span> Brasil</h3>
+
+  <div class="cards-menu">
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Feijoada a traditional brazilian delight _ Premium AI-generated image.jpg" alt="Feijoada" width="30%"></div>
+      <div class="topo-card">
+        <h4>Feijoada</h4>
+        <span>R$60</span>
+      </div>
+
+      <p>
+        Ensopado tradicional de feijão preto com carne de porco, carne bovina e linguiça, servido com arroz.
+      </p>
+
+    </div>
+
+    <div class="card">
+      <div class="image-box"><img src="Pratos/Brazilian Fish Stew (Moqueca de Peixe).jpg" alt="Moqueca" width="30%"></div>
+      <div class="topo-card">
+        <h4>Moqueca</h4>
+        <span>R$100</span>
+      </div>
+
+      <p>
+      Ensopado baiano de frutos do mar com leite de coco, azeite de dendê e pimentas.
+      </p>
+
+    </div>
+
+    <div class="card">
+         <div class="image-box"><img src="Pratos/download (27).jpg" alt="Picanha" width="30%"></div>
+      <div class="topo-card">
+        <h4>Picanha Assada</h4>
+        <span>R$120</span>
+      </div>
+
+      <p>
+        Carne bovina brasileira grelhada à perfeição com chimichurri.
+      </p>
+
+    </div>
+
+   </div>
+
+</div>
+
+
+<!-- DIETARY -->
+
+<section class="dietary">
+
+  <h2>Opções para dietas especiais</h2>
+
+  <p>
+    Teremos prazer em atender a restrições alimentares, incluindo vegetarianismo, veganismo, 
+    intolerância ao glúten e outras. Informe seu garçom ou adicione uma observação à sua reserva.
+  </p>
+
+</section>
+
+</section>
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Coluna 1 -->
+        <div class="footer-box">
+            <h2>Atlas Gastronômico</h2>
+            <p>
+                Onde a arte culinária encontra os sabores do mundo inteiro em uma atmosfera.
+            </p>
+
+            <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"><img src="facebook.png" alt="facebook" width="48%"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"><img src="instagram (1).png" alt="instagram" width="48%"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"><img src="icons8-twitter-48.png" alt="twiitter" width="48%"></i></a>
+        </div>
+      </div>
+
+        <!-- Coluna 2 -->
+        <div class="footer-box">
+            <h3>Informações de contato</h3>
+
+            <div class="info">
+                <span>📍</span>
+                <p>
+                     Alameda Santos, 1850 <br>
+                    Jardins, São Paulo – SP 
+                    01418-200 
+                </p>
+            </div>
+
+            <div class="info">
+                <span>📞</span>
+                <p>+55 (22) 123-4567</p>
+            </div>
+
+            <div class="info">
+                <span>✉</span>
+                <p>info@atlasgastronomico.com</p>
+            </div>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="footer-box">
+            <h3>Horário de funcionamento</h3>
+
+            <div class="hours">
+                <span>Segunda-Feira - Quinta-Feira</span>
+                <span>5:00 PM - 10:00 PM</span>
+            </div>
+
+            <div class="hours">
+                <span>Sexta-Feira - Sábado</span>
+                <span>5:00 PM - 11:00 PM</span>
+            </div>
+
+            <div class="hours">
+                <span>Domingo</span>
+                <span>4:00 PM - 9:00 PM</span>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p> © 2026 Atlas Gastronômico Restaurante. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</html>

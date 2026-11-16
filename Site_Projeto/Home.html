@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Gastronômico</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // O jQuery captura o clique em todos esses elementos de uma vez só
+      $('.open-btn, .close-btn, .mobile-menu-links a').click(function() {
+        $('#mobileMenu').toggleClass('is-active');
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Cabeçalho Principal -->
+
+  <header class="header-container">
+    <div class="logo-title-area">
+        <img src="Logo2.png" alt="Logo Atlas Gastronômico" class="logo-img">
+        <h1 class="logo">Atlas Gastronômico</h1>
+    </div>
+    <!-- Menu deitado para computadores (escondido no mobile) -->
+    <nav class="desktop-menu">
+      <a href="Home.html">Home</a>
+      <a href="Sobre.html">Sobre</a>
+      <a href="Cardápio.html">Cardápio</a>
+      <a href="Contato.html">Contato</a>
+      <a href="Reserva.html">Reserva</a>
+      <a href="Delivery.html">Delivery</a>
+    </nav>
+
+   <button class="menu-toggle-btn open-btn" aria-label="Abrir menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- Janela de Menu Mobile Sobreposto -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <span class="logo">Atlas Gastronômico</span>
+      <!-- Botão de fechar (Adicionada a classe close-btn) -->
+      <button class="menu-toggle-btn close-btn">✕</button>
+    </div>
+    <nav class="mobile-menu-links">
+    <a href="Home.html">Home</a>
+    <a href="Sobre.html">Sobre</a>
+    <a href="Cardápio.html">Cardápio</a>
+    <a href="Contato.html">Contato</a>
+    <a href="Reserva.html">Reserva</a>
+    <a href="Delivery.html">Delivery</a>
+    </nav>
+  </div>
+</header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="conteudo">
+      <h2>Um Mundo de Sabores</h2>
+      <p>
+        Experimente a excelência culinária de todo o mundo!
+      </p>
+      <a href="Reserva.html">
+        <button class="btn-order">Reserve Sua Mesa!</button>
+      </a>
+    </div>
+  </section>
+
+  <section class="features">
+
+    <div class="feature-card1">
+      <div class="icon-circle"> 
+        <img src="globo-terrestre (1).png" alt="globo" width="40%">
+        <i class="fa-solid fa-globe"></i>
+      </div>
+      <h3>Culinárias Globais</h3>
+      <p>
+        Explore sabores autênticos das costas do Mediterrâneo aos mercados asiáticos,
+        todos elaborados com paixão e precisão.
+      </p>
+    </div>
+
+    <div class="feature-card1">
+      <div class="icon-circle"> 
+        <img src="chefe-de-cozinha.png" alt="chefe-de-cozinha" width="40%">
+        <i class="fa-solid fa-chef-hat"></i>
+      </div>
+      <h3>Master Chefs</h3>
+      <p>
+        Nossos chefs com formação internacional trazem décadas de experiência e
+        técnicas inovadoras para cada prato.
+      </p>
+    </div>
+
+    <div class="feature-card1">
+      <div class="icon-circle"> 
+        <img src="medalha-de-ouro.png" alt="medalha" width="40%">
+        <i class="fa-regular fa-award"></i>
+      </div>
+      <h3>Premiado</h3>
+      <p>
+        Reconhecido pela excelência com múltiplos prêmios culinários e destaque
+        em publicações gastronômicas renomadas.
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="title">
+      <h1>Pratos Populares</h1>
+      <p>
+        Descubra as criações exclusivas da nossa chef, com os melhores ingredientes
+        <br>
+        de todo o mundo!
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="image-box">
+          <img src="Pratos/download (24).jpg" alt="Ribeye">
+        </div>
+        <div class="content">
+          <div class="name-price">
+            <h2>Ribeye Grelhado Steak</h2>
+            <span>R$150</span>
+          </div>
+          <p>
+           Carne bovina premium com legumes assados ​​e molho especial.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-box">
+          <img src="Pratos/Lemon and Thyme Roasted Sea Bass_ A Light Mediterranean Gem.jpg" alt="Robalo">
+        </div>
+        <div class="content">
+          <div class="name-price">
+            <h2>Robalo Mediterrâneo</h2>
+            <span>R$130</span>
+          </div>
+          <p>
+            Peixe fresco com legumes da estação e manteiga de ervas.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-box">
+          <img src="Pratos/Risotto al Tartufo Recipe.jpg" alt="Risotto">
+        </div>
+        <div class="content">
+          <div class="name-price">
+            <h2>Risoto de Trufas</h2>
+            <span>R$90</span>
+          </div>
+          <p>
+            Arroz arbóreo cremoso com trufa negra e parmesão.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-box">
+          <img src="Pratos/Duck Confit Recipe.jpg" alt="Duck">
+        </div>
+        <div class="content">
+          <div class="name-price">
+            <h2>Confit de Pato</h2>
+            <span>R$110</span>
+          </div>
+          <p>
+            Coxa de pato cozida lentamente com pele crocante e redução de molho.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-box">
+          <img src="Pratos/download (22).jpg" alt="Vieiras">
+        </div>
+        <div class="content">
+          <div class="name-price">
+            <h2>Vieiras grelhadas</h2>
+            <span>R$180</span>
+          </div>
+          <p>
+            Vieiras grelhadas com purê de couve-flor e caviar.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-box">
+          <img src="Pratos/download (23).jpg" alt="Wagyu Tartare">
+        </div>
+        <div class="content">
+          <div class="name-price">
+            <h2>Wagyu Tartare</h2>
+            <span>R$170</span>
+          </div>
+          <p>
+            Carne wagyu cortada à mão com ovo de codorna e chalotas crocantes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>Atlas Gastronômico</h2>
+            <p>
+                Onde a arte culinária encontra os sabores do mundo inteiro em uma atmosfera única.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"><img src="facebook.png" alt="facebook" width="48%"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"><img src="instagram (1).png" alt="instagram" width="48%"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"><img src="icons8-twitter-48.png" alt="twiitter" width="48%"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>Informações de contato</h3>
+            <div class="info">
+                <span>📍</span>
+                <p>
+                    Alameda Santos, 1850 <br>
+                    Jardins, São Paulo – SP 
+                    01418-200 
+                    
+                </p>
+            </div>
+            <div class="info">
+                <span>📞</span>
+                <p>+55 (22) 123-4567</p>
+            </div>
+            <div class="info">
+                <span>✉</span>
+                <p>info@atlasgastronomico.com</p>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>Horário de funcionamento</h3>
+            <div class="hours">
+                <span>Segunda-Feira - Quinta-Feira</span>
+                <span>5:00 PM - 10:00 PM</span>
+            </div>
+            <div class="hours">
+                <span>Sexta-Feira - Sábado</span>
+                <span>5:00 PM - 11:00 PM</span>
+            </div>
+            <div class="hours">
+                <span>Domingo</span>
+                <span>4:00 PM - 9:00 PM</span>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p> © 2026 Atlas Gastronômico Restaurante. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
