@@ -1,0 +1,204 @@
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Mesa - Atlas Gastronômico</title>
+    <link rel="stylesheet" href="style.css">
+ <script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    // Adiciona ou remove o estado ativo da cortina branca
+    mobileMenu.classList.toggle('is-active');
+  }
+</script>
+</head>
+<body>
+
+  <!-- Cabeçalho Principal -->
+
+  <header class="header-container">
+    <div class="logo-title-area">
+        <img src="Logo2.png" alt="Logo Atlas Gastronômico" class="logo-img">
+        <h1 class="logo">Atlas Gastronômico</h1>
+    </div>
+    <!-- Menu deitado para computadores (escondido no mobile) -->
+    <nav class="desktop-menu">
+      <a href="Home.html">Home</a>
+      <a href="Sobre.html">Sobre</a>
+      <a href="Cardápio.html">Cardápio</a>
+      <a href="Contato.html">Contato</a>
+      <a href="Reserva.html">Reserva</a>
+      <a href="Delivery.html">Delivery</a>
+    </nav>
+
+    <!-- Botão para telas móveis (Imagem 1) -->
+    <button class="menu-toggle-btn open-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- Janela de Menu Mobile Sobreposto (Imagem 2) -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">Atlas Gastronômico</span>
+    <button class="menu-toggle-btn close-btn" onclick="toggleMobileMenu()">✕</button>
+    </div>
+    <nav class="mobile-menu-links">
+      <a href="Home.html" onclick="toggleMobileMenu()">Home</a>
+      <a href="Sobre.html" onclick="toggleMobileMenu()">Sobre</a>
+      <a href="Cardápio.html" onclick="toggleMobileMenu()">Cardápio</a>
+      <a href="Contato.html" onclick="toggleMobileMenu()">Contato</a>
+      <a href="Reserva.html" onclick="toggleMobileMenu()">Reserva</a>
+      <a href="Delivery.html" onclick="toggleMobileMenu()">Delivery</a>
+    </nav>
+  </div>
+</header>
+<section class="reservation">
+
+  <div class="title">
+    <h1>Reserve Sua Mesa!</h1>
+    <p>Reserve sua experiência gastronômica e deixe o resto conosco.</p>
+  </div>
+
+  <form class="reservation-form">
+
+    <div class="input-group">
+      <label>Nome Completo</label>
+      <input type="text" placeholder="">
+    </div>
+
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" placeholder="@example.com">
+    </div>
+
+    <div class="input-group">
+      <label>Telefone</label>
+      <input type="text" placeholder="(00) 000-0000">
+    </div>
+
+    <div class="input-group">
+      <label>Número de pessoas</label>
+
+      <div class="input-icon">
+        <i class="fa-regular fa-user"></i>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>4</option>
+          <option>6</option>
+          <option></option>
+        </select>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>Data</label>
+
+      <div class="input-icon">
+        <i class="fa-regular fa-calendar"></i>
+        <input type="date">
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>Horário</label>
+
+      <div class="input-icon">
+        <i class="fa-regular fa-clock"></i>
+
+        <select>
+          <option>Selecione o horário</option>
+          <option>18:00</option>
+          <option>19:00</option>
+          <option>20:00</option>
+          <option>21:00</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="input-group full-width">
+      <label>Pedidos Especiais (Opcional)</label>
+
+      <textarea placeholder="Alguma restrição alimentar ou ocasião especial?"></textarea>
+    </div>
+
+    <button type="submit" class="btn-order">
+      Confirmar Reserva
+    </button>
+
+  </form>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Coluna 1 -->
+        <div class="footer-box">
+            <h2>Atlas Gastronômico</h2>
+            <p>
+                Onde a arte culinária encontra os sabores do mundo inteiro em uma atmosfera.
+            </p>
+
+            <div class="social-icons">
+          <a href="#"><img src="facebook.png" alt="facebook" width="48%"></i></a>
+          <a href="#"><img src="instagram (1).png" alt="instagram" width="48%"></i></a>
+          <a href="#"><img src="icons8-twitter-48.png" alt="twiitter" width="48%"></i></a>
+        </div>
+      </div>
+
+        <!-- Coluna 2 -->
+        <div class="footer-box">
+            <h3>Informações de contato</h3>
+
+            <div class="info">
+                <span>📍</span>
+                <p>
+                     Alameda Santos, 1850 <br>
+                    Jardins, São Paulo – SP 
+                    01418-200 
+                </p>
+            </div>
+
+            <div class="info">
+                <span>📞</span>
+                <p>+55 (22) 123-4567</p>
+            </div>
+
+            <div class="info">
+                <span>✉</span>
+                <p>info@atlasgastronomico.com</p>
+            </div>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="footer-box">
+            <h3>Horário de funcionamento</h3>
+
+            <div class="hours">
+                <span>Segunda-Feira - Quinta-Feira</span>
+                <span>5:00 PM - 10:00 PM</span>
+            </div>
+
+            <div class="hours">
+                <span>Sexta-Feira - Sábado</span>
+                <span>5:00 PM - 11:00 PM</span>
+            </div>
+
+            <div class="hours">
+                <span>Domingo</span>
+                <span>4:00 PM - 9:00 PM</span>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p> © 2026 Atlas Gastronômico Restaurante. Todos os direitos reservados.</p>
+    </div>
+</footer>
+ 
